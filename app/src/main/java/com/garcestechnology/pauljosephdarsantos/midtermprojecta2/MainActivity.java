@@ -23,9 +23,10 @@ import android.view.WindowManager;
 
 
 import java.util.ArrayList;
-public class MainActivity extends AppCompatActivity implements LoaderCallbacks<ArrayList<Articles>> {
+public class MainActivity extends AppCompatActivity implements LoaderCallbacks<ArrayList<Articles>> {    private static final String REQUEST_URL = "https://newsapi.org/v1/articles?source=the-lad-bible&sortBy=top&apiKey=3e1b9292984251a68a3096007bb7e2b9";
 
-    private static final String REQUEST_URL = "https://newsapi.org/v1/articles?source=the-lad-bible&sortBy=top&apiKey=ddbca87d01e1464d8de336a4dfd64677";
+
+    private static final String REQUEST_URL = "https://newsapi.org/v1/articles?source=the-lad-bible&sortBy=top&apiKey=3e1b9292984251a68a3096007bb7e2b9";
     private static final int NEWS_LOADER_ID = 1;
     private RecyclerView recyclerView;
     private Adapter newsAdapter;
